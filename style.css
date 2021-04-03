@@ -1,0 +1,378 @@
+/*common elements*/
+body {
+    font-size: 1rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(192, 192, 192, 0.808);
+    margin: 0;
+    padding: 0;
+    display: block;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+h1 {
+    color: black; /*come back and change this*/
+    font-size: 2em;
+    margin: 0.7 0 0.7 0;
+    padding: 0;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    display: block;
+    color:black /*Does this need to be changed?*/
+}
+
+a, a:visited {
+    color: red;
+}
+
+a:hover {
+    color: blue;
+}
+hr {
+    padding: 0;
+    margin: 1.6em 1.3em 0.7em 0.7em;
+}
+
+ol, ul{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+section {
+    display: block;
+}
+
+div {
+    display: block;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+@media (min-width: 576px)
+.col-sm-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) 
+.col-md-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.column {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.col-sm-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.col-md-8 {
+    flex: 0 0 66.67%;
+    max-width: 66.67%;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+/*Header*/
+header {
+    margin: 0;
+    padding: 0;
+}
+/*nav bar*/
+.nav {
+    background-color: rgb(46, 46, 46);
+    font-size: 1.7em;
+    letter-spacing: 0.04em;
+    padding: 1.0em 1.0em 0.5em;
+    margin: 0;
+    position: sticky;
+    overflow: hidden;
+}
+
+.nav a {
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 16px;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: rgb(46, 46, 46);
+    color:black;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    word-spacing: 33%;
+}
+
+.nav li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.nav li a, nav li a:visited {
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+    padding: 0;
+}
+
+/*Top Section*/
+.top {
+    text-align: center;
+    background-color: #697184;
+    border-radius: 0;
+    color: #D8CFD0;
+    padding: 20rem 2rem;
+    
+    box-shadow: -3px 10px 10px rgb(66 66 66);
+}
+
+.large-header {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../Portfolio/assets/woods_background.jpg);
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+/*About section*/
+#about {
+    position: relative;
+    padding: 50px;
+    margin: 50px 0;
+    background-color: #D8CFD0;
+}
+
+#aboutme {
+    text-align: right;
+}
+
+#prof-pic {
+    height: 600px;
+    width: 400px;
+    box-shadow: 1px 7px 7px;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+/*Skills*/
+.skills {
+    margin: 40px;
+    margin-left:auto;
+    margin-right: auto;
+    padding: 8px;
+    border: 1px solid;
+    border:rgba(192, 192, 192, 0.808);
+    box-shadow: 1px 1em 1em;
+}
+
+.skills li {
+    padding: 0 0 8px;
+}
+/*Portfolio section*/
+section #portfolio {
+    position:relative;
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: #697184;
+}
+
+.port-cover{
+    transition: .2s;
+    margin-bottom: 55px;
+}
+
+.port-title {
+    text-align: center;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.project-pic {
+    margin: 0 0 50px;
+    transition: width 2s, height 3s;
+}
+
+#portfolio img {
+    width: 350px;
+    height: 200px;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-pic:hover {
+    width: 70px;
+    height: 70px;
+}
+
+/*Contact section*/
+#contact {
+    padding-top: 30px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#form {
+    font-size: 3em;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+.col-md-6 {
+    position: relative;
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+input[type=name] {
+    margin: 10px 0;
+    padding: 10px;
+    box-shadow: 0 0 6px 1px;
+    border-radius: 7px;
+}
+
+input[type=email] {
+    margin: 10px 0;
+    padding: 10px;
+    box-shadow: 0 0 6px 1px;
+    border-radius: 7px;
+}
+
+textarea {
+    padding: 5px;
+    border: 1px;
+    border-radius: 5px;
+    width: 100%;
+    overflow: auto;
+    resize: vertical;
+}
+
+button {
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid black;
+    transition: .2s;
+}
+
+/*Footer*/
+footer {
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
+    height: 60px;
+
+}
+
+.menufooter{
+    background-color: #D8CFD0;
+    text-align: center;
+    padding: 15px;
+}
+
+footer ul li{
+    display: inline-block;
+    padding: 0 0 0;
+    margin: 0;
+}
+
+footer ul li:before {
+    padding-right: 0.1em;
+}
+
+footer a, footer a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: tomato;
+    text-decoration: overline;
+}
+
+.SocialIcon {
+    padding: 10px;
+    margin-left: 300px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    background: none;
+    display: inline-block;
+}
+
+span {
+    text-align: center;
+    margin-left: 200px;
+}
